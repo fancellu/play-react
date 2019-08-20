@@ -20,4 +20,11 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     Ok(views.html.index("Your new application is ready."))
   }
 
+  def react = Action {
+    Ok(views.html.react())
+  }
+
+  def material = Action {
+    Ok(views.html.material())
+  }
 }
